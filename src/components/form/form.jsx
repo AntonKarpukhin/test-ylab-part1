@@ -5,6 +5,8 @@ import { useState } from "react";
 import Paragraph from "../paragraph/paragraph.jsx";
 import isEmailValid from "../../helpers/validation.js";
 import postUserInfo from "../../helpers/api.js";
+import passwordImg from '../../../public/password.svg'
+import nameImg from '../../../public/name.svg'
 
 const Form = () => {
 
@@ -49,7 +51,7 @@ const Form = () => {
                     value={email}
                     onChange={(evt) => setEmail(evt.target.value)}
                 />
-                <img className={styles.img} src="../../../public/name.svg" alt='email'/>
+                <img className={styles.img} src={nameImg} alt='email'/>
                 {isValid ? <span>Некорректный E-mail</span> : null}
             </label>
             <label className={styles.label} htmlFor='password'>
@@ -62,7 +64,7 @@ const Form = () => {
                     onChange={(evt) => setPassword(evt.target.value)}
                     onClick={onViewPassword}
                 />
-                <img className={styles.img} src="../../../public/password.svg" alt='password'/>
+                <img className={styles.img} src={passwordImg} alt='password'/>
             </label>
             <Button />
         </form>
