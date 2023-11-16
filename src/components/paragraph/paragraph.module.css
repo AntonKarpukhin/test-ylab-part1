@@ -1,0 +1,21 @@
+.paragraph {
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.black {
+	color: var(--input-color);
+}
+
+.gray {
+	color: var(--gray-color);
+}
+
+.white {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--white-color);
+}

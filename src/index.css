@@ -1,0 +1,15 @@
+:root {
+	--black-color: #000;
+	--white-color: #FFF;
+	--purple-color: #985ACE;
+	--purple-light-color: #F8F1FF;
+	--gray-color: rgba(64, 58, 75, 0.60);
+	--input-color: #403A4B;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
